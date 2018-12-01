@@ -9,4 +9,11 @@ webApp.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$u
     });
 
     $urlRouterProvider.otherwise('/');
-}])
+
+
+
+}]);
+
+webApp.config(['$resourceProvider', function ($resourceProvider) {
+    $resourceProvider.defaults.stripTrailingSlashes = false;
+}]);

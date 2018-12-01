@@ -3,6 +3,7 @@
 <head>
   {% load static %}
   <link rel="stylesheet" href="{% static "dashboard/css/style.css" %}" />
+  <link rel="stylesheet" href="{% static "dashboard/css/bootstrap.min.css" %}" />
   <meta charset="utf-8">
   <title> {% block title %} {% endblock title %} </title>
 </head>
@@ -20,5 +21,6 @@
   <script src="{% static "dashboard/js/app.js" %}"></script>
   <script src="{% static "dashboard/js/controllers.js" %}"></script>
   <script src="{% static "dashboard/js/services.js" %}"></script>
+  {% comment %} <script src="{% static "dashboard/js/bootstrap.min.js" %}"></script> {% endcomment %}
 </body>
 </html>

@@ -1,3 +1,29 @@
 <div class="container">
+    <button type="button" ng-click="getData();">
+        Pobierz dane
+    </button>
+
+    <div class="countries">
+        <table class="table table-striped">
+            <thead >
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Population</th>
+                    <th scope="col">Region</th>
+                    <th scope="col">Currencies</th>
+                    <th scope="col">Borders</th>
+                </tr>
+            </thead>
+            <tbody >
+                <tr ng-repeat="country in countries">
+                    <td>{{country.name}}</td>
+                    <td>{{country.population}}</td>
+                    <td>{{country.region}}</td>
+                    <td>{{country.currencies[0].code}}</td>
+                    <td>{{country.borders}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 </div>
